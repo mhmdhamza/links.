@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f5e6d3, #d2b48c);
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Headings fix */
+.card-container h1,
+.card-container h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #3e2c0a;
+}
+
+.card-container h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #5a4315;
+}
+
+/* Container */
+.card-container {
+    height: 100vh;
+    margin: 0;
+    margin-top: 70px;
+    display: flex;
+    padding: 100px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions */
+.card,
+.card img,
+.card::before,
+.card-content,
+.card-content h3,
+.card-content p,
+span {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image zoom + clarity */
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* Dark overlay */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/* Remove overlay on hover */
+.card:hover::before {
+    background: rgba(0,0,0,0);
+}
+
+/* Text highlight */
+span {
+    font-weight: bolder;
+    font-style: italic;
+    color: #ffd27f;
+}
+
+/* Overlay text */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+}
+
+/* Text styling */
+.card-content h3 {
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    opacity: 0.95;
+    text-align: center;
+    color: azure;
+}
+
+/* Hover zoom text */
+.card:hover .card-content h3 {
+    transform: scale(1.1);
+}
+
+.card:hover .card-content p {
+    transform: scale(1.05);
+}
+</style>
+
+<body>
+
+<div class="card-container">
+    <h1>NON SPORTING DOGS</h1>
+    <h2>A mixed group of dogs with no single job purpose, mostly kept as companion pets.</h2>
+
+```
+<div class="card">
+    <img src="non sporting dogs/bichon-frise.jpg">
+    <div class="card-content">
+        <h3>BICHON FRISE</h3>
+        <p>Cheerful, affectionate, small companion.</p>
+        <p><br><span>Origin:</span> Mediterranean region <br><span>Size:</span> Small <br><span>Weight:</span> 5–10 kg <br><span>Lifespan:</span> 12–15 years</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="non sporting dogs/dalmanian.jpg">
+    <div class="card-content">
+        <h3>DALMATIAN</h3>
+        <p>Energetic, striking spotted coat, playful.</p>
+        <p><br><span>Origin:</span> Croatia 🇭🇷 <br><span>Size:</span> Medium–Large <br><span>Weight:</span> 20–35 kg <br><span>Lifespan:</span> 10–13 years</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="non sporting dogs/boston-terrier.jpg">
+    <div class="card-content">
+        <h3>BOSTON TERRIER</h3>
+        <p>Friendly, lively, adaptable companion.</p>
+        <p><br><span>Origin:</span> USA 🇺🇸 <br><span>Size:</span> Small <br><span>Weight:</span> 6–11 kg <br><span>Lifespan:</span> 11–14 years</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="non sporting dogs/poddle.jpg">
+    <div class="card-content">
+        <h3>POODLE</h3>
+        <p>Intelligent, elegant, hypoallergenic.</p>
+        <p><br><span>Origin:</span> Germany/France 🇩🇪🇫🇷 <br><span>Size:</span> Toy, Miniature, Standard <br><span>Weight:</span> 3–30 kg <br><span>Lifespan:</span> 12–15 years</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="non sporting dogs/bulldog.jpg">
+    <div class="card-content">
+        <h3>BULLDOG</h3>
+        <p>Gentle, affectionate, calm companion.</p>
+        <p><br><span>Origin:</span> England 🇬🇧 <br><span>Size:</span> Medium–Large <br><span>Weight:</span> 18–25 kg <br><span>Lifespan:</span> 8–10 years</p>
+    </div>
+</div>
+```
+
+</div>
+
+</body>
+</html>
