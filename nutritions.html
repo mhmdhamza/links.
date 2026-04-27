@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        
+        :root {
+            --dark-brown: #5D4037;
+            --mid-brown: #8D6E63;
+            --light-tan: #D7CCC8;
+            --cream-bg: #FDFBF9;
+        }
+        body{
+            background-color: #FDF5E6;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 40px auto;
+            max-width: 1000px;
+            padding: 0 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(93, 64, 55, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            /* Table-layout fixed ensures columns have predictable widths */
+            table-layout: fixed;
+        }
+
+        /* Header Styling */
+        thead {
+            background-color:var(--dark-brown) ;
+            color:  rgb(143, 111, 111);
+            height: 80px;
+        }
+
+        th {
+            padding: 18px 15px;
+            /* This centers your headings */
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Column Spacing */
+        td {
+            padding: 30px;
+           gap: 50px;
+            text-align: left;
+            /* Keeps content readable */
+            vertical-align: middle;
+            border-bottom: 5px solid var(--light-tan);
+            word-wrap: break-word;
+            /* Prevents text overflow */
+        }
+
+        /* Specific alignment for the Status/Icon column */
+        td:nth-child(2) {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        /* Zebra Striping */
+        tbody tr:nth-child(even) {
+            background-color: ;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color:#EFEBE9;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        strong {
+            color: var(--dark-brown);
+        }
+        h1{
+            font-family:   "Cardo", serif;;
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <div class="table-container">
+         <h1>Safe & Unsafe foods </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Items</th>
+                    <th>Safe?</th>
+                    <th>Primary Nutrients</th>
+                    <th>Health Benefits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Carrots</strong></td>
+                    <td>✅</td>
+                    <td>Vitamin A, Fiber</td>
+                    <td>Excellent for dental health (mechanical cleaning) and vision.</td>
+                </tr>
+                <tr>
+                    <td><strong>Blueberries</strong></td>
+                    <td>✅</td>
+                    <td>Antioxidants, Vit C & K</td>
+                    <td>Supports brain health and fights cellular aging/inflammation.</td>
+                </tr>
+                <tr>
+                    <td><strong>Apples</strong></td>
+                    <td>✅</td>
+                    <td>Fiber, Vit A & C</td>
+                    <td>Good for digestion. (Always remove seeds and core first)</td>
+                </tr>
+                <tr>
+                    <td><strong>Cooked Chicken</strong></td>
+                    <td>✅</td>
+                    <td>Lean Protein</td>
+                    <td>Essential for muscle growth and repair. Use plain, boiled meat.</td>
+                </tr>
+                <tr>
+                    <td><strong>Salmon</strong></td>
+                    <td>✅</td>
+                    <td>Omega-3 Fatty Acids</td>
+                    <td>Promotes a shiny coat, healthy skin, and reduces joint inflammation.</td>
+                </tr>
+                <tr>
+                    <td><strong>Pumpkin</strong></td>
+                    <td>✅</td>
+                    <td>Soluble Fiber</td>
+                    <td>A "miracle" for digestion; helps with both diarrhea and constipation.</td>
+                </tr>
+                <tr>
+                    <td><strong>Green Beans</strong></td>
+                    <td>✅</td>
+                    <td>Iron, Vitamins</td>
+                    <td>Low-calorie filler perfect for dogs needing weight management.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cooked Eggs</strong></td>
+                    <td>✅</td>
+                    <td>Protein, Riboflavin</td>
+                    <td>Highly digestible protein; great for an energy boost.</td>
+                </tr>
+                <tr>
+                    <td><strong>Chocolate</strong></td>
+                    <td>&#10060;</td>
+                    <td>Theobromine</td>
+                    <td>Affects the heart and nervous system; can cause seizures.</td>
+                </tr>
+                
+                  <tr>
+                    <td><strong>Grapes/Raisins</strong></td>
+                    <td>&#10060;</td>
+                    <td>Unknown Toxin</td>
+                    <td>Can lead to rapid kidney failure, even in small amounts.</td>
+                </tr>
+                  <tr>
+                    <td><strong>Onions/Garlic</strong></td>
+                    <td>&#10060;</td>
+                    <td>Thiosulfate</td>
+                    <td>Damages red blood cells, leading to anemia and weakness.</td>
+                </tr>
+                  <tr>
+                    <td><strong>Xylitol (Sweetener)</strong></td>
+                    <td>&#10060;</td>
+                    <td>Sugar Alcohol</td>
+                    <td>Found in "sugar-free" gum/peanut butter; causes fatal liver failure.</td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
